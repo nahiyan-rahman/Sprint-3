@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Customer Login - Food Ordering System</title>
+    <script src="../script/kawai2.js" defer></script>
+    <script src="./scripts/login-check.js" defer></script>
+    <script src="./scripts/dashboard-index.js" defer></script>
+    <link rel="stylesheet" href="../styles/kawaii.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-image: url('../img/bg.png');">
+    <header flex>
+        <h1><a flat href="../">Order Food</a></h1>
+        <form action="../search.html" method="get" shade1 no-decors round-edge>
+            <input name="q" type="text" placeholder="search" inline center>
+            <div>
+                <button type="submit" name="food">Food</button>|
+                <button type="submit" name="restaurant">Restaurants</button>
+            </div>
+        </form>
+        <div flex paddings>
+            <a href="../restaurant/index.html">Restaurant Zone</a>
+            <button toggleTheme></button>
+        </div>
+    </header>
+
+    <main padding>
+        <h2>Orders</h2>
+        <table id="myOrders" paddings>
+            <tr>
+                <th>Serial</th>
+                <th>Food</th>
+                <th>Rate</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Order State</th>
+            </tr>
+        </table>
+    </main>
+
+    <footer>Dveloped By Group 5 <a onclick="logout()">Log out</a></footer>
+</body>
+
+</html>
